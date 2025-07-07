@@ -1,16 +1,9 @@
 package com.ecomwebsite.DTO;
 
 
-import com.ecomwebsite.Entity.Order;
-import com.ecomwebsite.Entity.Product;
-import com.ecomwebsite.Entity.User;
 import com.ecomwebsite.Enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import jakarta.persistence.Column;
-import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +15,7 @@ import java.time.LocalDateTime;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrederItemDto {
+public class OrderItemDto {
 
     private int orderItemId;
 

@@ -18,7 +18,7 @@ public class Order {
     private Double totalPrice;
 
     @OneToMany( mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<OrederItem>orderItemList;
+    private List<OrderItem>orderItemList;
 
     @Column(name = "created_at")
     private final LocalDateTime createdAt = LocalDateTime.now();

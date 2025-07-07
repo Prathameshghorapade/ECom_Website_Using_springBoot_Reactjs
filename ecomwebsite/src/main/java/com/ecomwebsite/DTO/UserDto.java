@@ -1,12 +1,10 @@
 package com.ecomwebsite.DTO;
 
 
-import com.ecomwebsite.Entity.Address;
 import com.ecomwebsite.Enums.UserRole;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -40,7 +38,7 @@ public class UserDto {
 
 
 
-    private List<OrederItemDto> orderItemList ;
+    private List<OrderItemDto> orderItemList ;
 
     private AddressDto address;
 
